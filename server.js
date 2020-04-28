@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 app.post('/insert', (req, res)=>{
-    res.send("request sent")
+    res.send(req.body)
     res.end();
 })
 
